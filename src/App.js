@@ -22,7 +22,7 @@ export default function App() {
 
 
   async function handleLikeRepository(id) {
-    const response = await api.put(`/repositories/${id}/like`)
+    const response = await api.post(`/repositories/${id}/like`)
 
     const likedRepository = response.data
 
